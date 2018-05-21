@@ -3,7 +3,7 @@
   Title: Distributed Payments for UTXO Assets
   Author: Igor M. Coelho <igor.machado@gmail.com>, Vitor N. Coelho
   <vncoelho@gmail.com>, Fabio H. Cardoso <slynrick@gmail.com>, Peter Lin
-  (evaluting), Li Jianyang (evaluating)
+  <linpengtao@neo.org>, Li Jianyang (evaluating)
   Type: Standard
   Status: Draft
   Created: 2018-04-17
