@@ -6,7 +6,7 @@
 
 # On the search for trusted NEO/GAS onchain automatic transfers: nep-distributed-payments
 
-## Guidelines for a adapting/using the `simplePrototype.cs`
+## Guidelines for a adapting/using the [`simplePrototype.cs`](https://github.com/NeoResearch/nep-distributed-payments/blob/master/simplePrototype/simplePrototype.cs)
 
 Congratulations to all of us!
 Good key contributions were made necessary for the achievement of the insights described here.
