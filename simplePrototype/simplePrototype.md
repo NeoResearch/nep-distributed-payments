@@ -20,7 +20,7 @@ Current, as will be seen during the next steps, there is not standard for this p
 Even it does not require any current additional functionality, we propose a new standard for this type of **Distributed Payments**, which would surely help light wallets to perform all steps accordingly.
 
 
-## Simple steps to be followed on the  (https://neocompiler.io)[NeoCompiler Eco]:
+## Simple steps to be followed on the [NeoCompiler Eco](https://neocompiler.io):
 ------------------------------------------------------------------------------------------------
 
 ###### S1 - Deploy the contract, storage is needed
