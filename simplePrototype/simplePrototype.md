@@ -4,7 +4,7 @@
       width="125px;">
 </p>
 
-# Trusted NEO/GAS onchain automatic transfers: nep-distributed-payments
+# Trusted NEO/GAS onchain automatic transfers
 
 Congratulations to all of us!
 Good key contributions were made necessary for the achievement of the insights described here.
@@ -16,8 +16,8 @@ As can be noticed, with this simple guidelines, **future development on NEO Ecos
 
 All steps are registered in the blockchain and the owner of the Contract would not be able to steal funds and do not reward.
 
-Current, as will be seen during the next steps, there is not standard for this procedure.
-Even it does not require any current additional functionality, we propose a new standard for this type of **Distributed Payments**, which would surely help light wallets to perform all steps accordingly.
+Current, as will be seen during the next steps, there is not a standard for this procedure.
+Even it does not require any current additional functionality, we propose a new standard for this type of **Distributed Payments**, the [`nep-distributed-payments`](https://github.com/neo-project/proposals/pull/45), which would surely help light wallets to perform all steps accordingly and in an efficient manner.
 
 
 ## Simple steps to be followed on the [NeoCompiler Eco](https://neocompiler.io):
