@@ -99,4 +99,4 @@ We will also use Eco platform (https://neocompiler.io/#/ecolab) to propose light
 
 ==Implementation==
 
-Example implementation: https://github.com/neoresearch/nep-distributed-payments/workingExample.cs
+Example implementation: https://github.com/NeoResearch/nep-distributed-payments/blob/master/workingPrototype.cs
