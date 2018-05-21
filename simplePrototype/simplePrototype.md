@@ -10,7 +10,6 @@
 
 Congratulations to all of us!
 Good key contributions were made necessary for the achievement of the insights described here.
-
 In particular, thanks to Igor Coelho, from NeoResearch, and Li Jianyang, from NEL team.
 
 As can be noticed, with this simple guidelines, **future development on NEO Ecosystem** could consider Automatic Transfer of NEO/GAS without any offchain untrusted step.
