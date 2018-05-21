@@ -100,3 +100,11 @@ We will also use Eco platform (https://neocompiler.io/#/ecolab) to propose light
 ==Implementation==
 
 Example implementation: https://github.com/NeoResearch/nep-distributed-payments/blob/master/workingPrototype.cs
+
+===Drawbacks and Future Improvements===
+
+After the contract calls SendUTXO, the asset is frozen and the process starts.
+
+Currently, the the implementation requires an extra invocation to ScheduleSendUTXO function to schedule de transfer process, and another Verification call to perform the transfer.
+
+We are already working on a prototype that will require only an extra Verification step, which is much faster and cheaper, so it still remains open the possibility of having the whole process performed in a single step on the invoked Smart Contract.
