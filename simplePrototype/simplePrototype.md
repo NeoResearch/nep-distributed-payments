@@ -1,41 +1,59 @@
+<p align="center">
+    <img
+      src="./logo.png"
+      width="125px;">
+</p>
+
 # nep-distributed-payments
-## Guidelines for a simple working prototype
+## Guidelines for a adapting/using the `simple prototype`
 
 Congratulations to all of us!
 Good key contributions were made necessary for the comprehensions stated here.
 
-In particular, thanks to the insights of NeoResearch and NEL team:
-(https://medium.com/neweconolab/neo-smart-contract-development-ii-an-additional-exploration-of-mission-impossible-119b49666b1d)[Mission Impossible I],
-(https://medium.com/neweconolab/neo-smart-contract-development-ii-an-additional-exploration-of-mission-impossible-119b49666b1d)[Mission Impossible II] and the upcomming (https://xxx)[Mission Impossible III]
+In particular, thanks to the insights of NeoResearch and NEL team.
+
+As can be noticed, with this simple guidelines, **future development on NEO Ecosystem** could consider Automatic Transfer of NEO/GAS without any offchain untrusted step.
+
+All steps are registered in the blockchain and the owner of the Contract would not be able to steal funds and do not reward.
+
+Current, as will be seen during the next steps, there is not standard for this procedure.
+Even it does not require any current additional functionality, we propose a new standard for this type of **Distributed Payments**, which would surely help light wallets to perform all steps accordingly.
 
 
 ## Simple steps to be followed on the  (https://neocompiler.io)[NeoCompiler Eco]:
 ------------------------------------------------------------------------------------------------
-### Step 1 - Deploy the contract, we need storage
 
-### Step 2 - Make a transfer to the address of the deployed contract
+###### S1 - Deploy the contract, storage is needed
 
-### Step 3 - Call "method" ["address","values(not used yet)+00000000",b"utxo" (reverted)]
-EXAMPLES IN PYTHON:
-"5265636f72645472616e73666572416e645554584f" ["AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y","200000000",b"ee4a22d100d3122d17e390f26a8f48d1e8f978a05a7d1ab97701191f6ecd4039"]
+###### S3 - Transfer some initials funds to the address of the deployed contract
 
-This step register that AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y will receive 1 NEO OR GAS from UTXO 0056facaee834ad514b60d06c1dd43f8741dd9c4c245b22b8a1d75a11c7228df
-TODO: Limit the Neo or Gas by asset id registered.
-OPTION 1: Allow multiple UTXO, it is usefull for huge amount
-OPTION 2: Create a function that merge UTXO, then, the last option will not be needed
+###### S3 - Call a method that register the address, values to withdraw and utxo(s)
 
+The current design required the following application invoke:
+`"method" ["address","values(not used yet)+00000000",b"utxo" (reverted)]`
 
-### Step 4 - Call verification/withdraw transaction
+In python: `"5265636f72645472616e73666572416e645554584f" ["AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y","200000000",b"ee4a22d100d3122d17e390f26a8f48d1e8f978a05a7d1ab97701191f6ecd4039"]`
 
-Verification: 0000
+This step register that `AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y` will receive `2 NEO OR GAS` (a filter can be done) from UTXO `ee4a22d100d3122d17e390f26a8f48d1e8f978a05a7d1ab97701191f6ecd4039` (reverted)
 
-Outputs: (first line should be the address of withdraw)
-e9eed8dc39332032dc22e5d6e86332c50327ba23
-Scripthash of the contranct
+###### S4 - Call verification/withdraw transaction
+The `verification` trigger can be seen as a kind of `withdrawn transaction`.
 
-Values:
-Ammount to withdraw
-Amount of change to the contract
+* Verification: 0000
+
+* Outputs: current, the first line should be the single address to withdraw
+    * `e9eed8dc39332032dc22e5d6e86332c50327ba23` (script hash of `AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y`)
+    * Scripthash of the contract
+    * Future improvement:
+
+* Values: Select, precisely, the value registered in the blockchain to be withdrew by the aforementioned address
+
+##### Future steps
+
+* Improve the simple template to allow multiple UTXO, consider a vector of address to withdraw with the same S4. Then, S3 can be done in parallel. Or OPTION 2: Create a function that merge UTXO, then, than, multiple UTXO will not be needed.
+* Minor:
+  * Limit the Neo or Gas by asset id registered
+  * Several other standards
 
 
 ### Illustrative examples
