@@ -4,7 +4,8 @@
       width="125px;">
 </p>
 
-# nep-distributed-payments
+# On the search for trusted NEO/GAS onchain automatic transfer: nep-distributed-payments
+
 ## Guidelines for a adapting/using the `simple prototype`
 
 Congratulations to all of us!
