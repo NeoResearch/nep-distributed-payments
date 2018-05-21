@@ -4,13 +4,13 @@
       width="125px;">
 </p>
 
-# On the search for trusted NEO/GAS onchain automatic transfers: nep-distributed-payments
-
-## Guidelines for a adapting/using the [`simplePrototype.cs`](https://github.com/NeoResearch/nep-distributed-payments/blob/master/simplePrototype/simplePrototype.cs)
+# Trusted NEO/GAS onchain automatic transfers: nep-distributed-payments
 
 Congratulations to all of us!
 Good key contributions were made necessary for the achievement of the insights described here.
 In particular, thanks to Igor Coelho, from NeoResearch, and Li Jianyang, from NEL team.
+
+## Guidelines for using and adapting the [`simplePrototype.cs`](https://github.com/NeoResearch/nep-distributed-payments/blob/master/simplePrototype/simplePrototype.cs)
 
 As can be noticed, with this simple guidelines, **future development on NEO Ecosystem** could consider Automatic Transfer of NEO/GAS without any offchain untrusted step.
 
