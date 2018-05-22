@@ -25,7 +25,7 @@ Even it does not require any current additional functionality, we propose a new 
 
 ###### S1 - Deploy the contract, storage is needed
 
-###### S3 - Transfer some initials funds to the address of the deployed contract
+###### S2 - Transfer some initials funds to the address of the deployed contract
 
 ###### S3 - Call a method that register the address, values to withdraw and utxo(s)
 
