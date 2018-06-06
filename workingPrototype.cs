@@ -174,5 +174,10 @@ namespace NeoContract1
             return value;
         }
 
+        public static string[] supportedStandards()
+        {
+          return new string[]{"NEP-10","NEP-11"};
+        }
+
     }
 }
